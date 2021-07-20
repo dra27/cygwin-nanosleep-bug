@@ -1,0 +1,5 @@
+./signal.exe &
+pid=$!
+sleep 2
+kill -s SIGINT $pid
+wait
